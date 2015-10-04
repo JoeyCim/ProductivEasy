@@ -1,0 +1,165 @@
+body, html {
+    margin: 1px;
+    padding: 1px;
+    font-family: "Luciana Grande", Helvetica, sans-serif;
+    font-weight: bold;
+    color: #000039;
+}
+
+h1 {
+    font-family: "Luciana Grande", Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: center;
+    color: #000059; 
+}
+
+li {
+    width: 90%;
+    height: 70px;
+    color: white;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-top: 1px;
+    overflow: hidden;
+    background-color: #4D94FF;
+    border-radius: 8px;
+    box-shadow: inset 0px 0px 1px 1px rgba(81,122,184,0.5), 
+                1px 1px 2px 1px rgba(0,0,0,0.5);  
+}
+
+li:hover {
+    background-color: #4585E6;
+    cursor: pointer;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    display: inline;
+    margin-top: 10px;
+}
+
+input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+.first-of-one {
+    border-radius: 10px;
+    width: 70%;
+    margin-top: 10px;
+    margin-left: 15%;
+}
+
+.first-of-two, .second-of-two {
+    border-radius: 10px;
+    width: 33%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.first-of-two {
+    margin-left: 15%;
+}
+
+.first-of-three, .second-of-three, .third-of-three {
+    border-radius: 10px;
+    width: 25%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.first-of-three {
+    margin-left: 10%;
+}
+
+.cat-title {
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.cat-sites, .cat-status {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+}
+
+.inactive {
+    color: #800000;
+    font-weight: bold;
+}
+
+.active {
+    color: #008000;
+    font-weight: bold;
+}
+
+#website-list {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#blocked-websites {
+    background-color: white;
+    border: 1px black #99CCFF;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.5);
+    margin: 0 auto;
+    width: 90%;
+    height: 80%;
+    overflow-y: auto;
+    padding-bottom: 10px;
+}
+
+#content-panel, #add-panel {
+    padding: 10px;
+    width: 350px;
+    height: 435px;
+    margin: 0px;
+    background-color: #CCE6FF;
+    border: 2px #92B6CF solid;
+    border-radius: 4px;
+    box-shadow: inset 0px 10px 20px 0px rgba(255,255,255,0.5),          
+                inset 0px -10px 20px 0px rgba(163,184,204,0.5), 
+                1px 1px 1px 1px rgba(0,0,0,0.5);  
+}
+
+#add-panel {
+    display: none;
+    overflow-y: auto;
+}
+
+#add-panel button {
+    display: none;
+}
+
+#mon-check {
+    margin-left: 0px;
+}
+
+#no-edit {
+    margin-left: 0px;
+    margin-right: 10px;
+}
+
+#error-message {
+    border: 1px rgba(90, 0, 0, 0.3) solid;
+    box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.5);
+    padding: 10px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0px;
+    bottom: 20px;
+    width: 80%;
+    height: 40px;
+    background-color: rgba(255, 51, 51, 0.8);
+    color: white;
+    display: none;
+}

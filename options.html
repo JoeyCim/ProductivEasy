@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ProductivEasy</title>
+        <link href="options.css" type="text/css" rel="stylesheet">
+        <script src="jquery/jquery-1.11.3.min.js" type="text/javascript">
+        </script>
+        <script src="options.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="content-panel">
+            <h1>Blocked Content</h1>
+            <div id="blocked-websites">
+                <ul id="website-list">
+                </ul>
+            </div>
+            <button class="first-of-one" id="add">Add New Blocked Category
+            </button>
+        </div>
+        <div id="add-panel">
+            <h1></h1>
+            <form id="cat-form">
+                <label>Enter one or more websites (one per line) to be blocked:
+                    <textarea id="blocked" rows="2" cols="30" wrap="off"></textarea>
+                </label>
+                <hr>
+                <label>Enter the times that the websites will be blocked: <br>
+                    <br>
+                    (Intervals should be between 00:00-24:00. Separate
+                    multiple intervals with a comma, e.g.<br> 
+                    <em>8:00-12:00, 14:00-16:00</em>. Spaces optional.)<br></br>
+                    <input type="text" id="week-time"/><br><br>
+                    Now the days on which this block will be active: <br><br>
+                    <input type="checkbox" id ="mon-check" value=1>M
+                    <input type="checkbox" id ="tues-check" value=2>T
+                    <input type="checkbox" id ="wed-check" value=3>W
+                    <input type="checkbox" id ="thurs-check" value=4>Th
+                    <input type="checkbox" id ="fri-check" value=5>F
+                    <input type="checkbox" id ="sat-check" value=6>Sat
+                    <input type="checkbox" id ="sun-check" value=0>Sun
+                </label>
+                <hr>
+                <label>Enter a name for the category (optional): <br><br>
+                    <input type="text" id="name" maxlength="35">
+                </label>
+                <br><br>
+                <label>
+                    <input type="checkbox" id="no-edit">Prevent modifications to
+                    this category while it is blocked (are you sure?)</input>
+                </label>
+            </form>
+            <button class="first-of-two" id="submit">Submit</button>
+            <button class="second-of-two" id="return">Return</button>
+            <button class="first-of-three" id="update">Update</button>
+            <button class="second-of-three" id="delete">Delete</button>
+            <button class="third-of-three" id="edit-return">Return</button>
+            <p id="error-message"></p>
+        </div>
+    </div>
+</body>
+</html>
